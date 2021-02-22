@@ -7,8 +7,8 @@ module.exports = class PricingRule {
    * Creates an instance of PricingRule.
    * @param {string} name
    * @param {string} description
-   * @param {function} condition
-   * @param {array of functions} action
+   * @param {boolean} condition a funciton that return true if condition for this pricing rule is met, false otherwise
+   * @param {number} action a funciton with logic to discount amount to cart item. Return discount amount
    * @memberof PricingRule
    */
   constructor({

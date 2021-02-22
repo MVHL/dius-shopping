@@ -38,8 +38,11 @@ const pricingRules = [
         cart.mbp ? cart.mbp.quantity : 0,
         cart.vga ? cart.vga.quantity : 0
       );
-      cart.vga.discount = bundles * Catalogue.getPrice("vga");
-      return cart.vga.discount;
+      if (cart.vga) {
+        cart.vga.discount = bundles * Catalogue.getPrice("vga");
+        return cart.vga.discount;
+      }
+      return 0;
     },
   }),
 ];

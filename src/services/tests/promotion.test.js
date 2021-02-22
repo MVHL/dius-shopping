@@ -112,6 +112,11 @@ test("'mbp free vga' should free 1 vga for every mbp", () => {
     expect(cart.vga.discount).toBe(0);
   }
   {
+    const cart = { mbp: { quantity: 2 } };
+    expect(pricingRule.condition(cart)).toBeFalsy();
+    expect(pricingRule.action(cart)).toBe(0);
+  }
+  {
     const cart = { vga: { quantity: 5 }, mbp: { quantity: 3 } };
     expect(pricingRule.condition(cart)).toBeTruthy();
     expect(pricingRule.action(cart)).toBeGreaterThan(0);
