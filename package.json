@@ -1,0 +1,32 @@
+{
+  "name": "dius-shopping",
+  "version": "0.0.1",
+  "description": "A checkout system with flexible pricing rules for discounts",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minhSkoolbo/dius-shopping.git"
+  },
+  "keywords": [
+    "checkout",
+    "cart",
+    "product",
+    "pricing",
+    "rule",
+    "catalogue",
+    "promotion"
+  ],
+  "author": "Martin Le",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/minhSkoolbo/dius-shopping/issues"
+  },
+  "homepage": "https://github.com/minhSkoolbo/dius-shopping#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
