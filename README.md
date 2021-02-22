@@ -1,7 +1,9 @@
 # dius-shopping
 
 A checkout system with flexible pricing rules for discounts.
+
 Pricing Rules are managed by Promotion service.
+
 Products are managed by Catalogue service.
 
 ## Start
@@ -10,7 +12,7 @@ Products are managed by Catalogue service.
 npm start
 ```
 
-## Test
+## Test (Jest)
 
 ```
 npm test
@@ -19,7 +21,10 @@ npm test
 ## Usage Example
 
 ```javascript
-var co = new Checkout(pricingRules);
+var Checkout = require("./models/checkout");
+var Promotion = require("./services/promotion");
+
+var co = new Checkout(Promotion.getPricingRules());
 co.scan(sku1);
 co.scan(sku2);
 co.total();
