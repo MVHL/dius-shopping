@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`The pricingRules data is correct 1`] = `
+Array [
+  PricingRule {
+    "action": [Function],
+    "condition": [Function],
+    "description": "If you buy 3 Apple TVs, you will pay the price of 2 only",
+    "name": "3 for 2 atv",
+  },
+  PricingRule {
+    "action": [Function],
+    "condition": [Function],
+    "description": "The brand new Super iPad will have a bulk discounted applied, where the price will drop to $499.99 each, if someone buys more than 4",
+    "name": ">4 ipd $499.99 each",
+  },
+  PricingRule {
+    "action": [Function],
+    "condition": [Function],
+    "description": "We will bundle in a free VGA adapter free of charge with every MacBook Pro sold.",
+    "name": "mbp free vga",
+  },
+]
+`;
